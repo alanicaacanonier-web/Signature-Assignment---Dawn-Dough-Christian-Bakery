@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Dawn &#38 Dough Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dawn.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <p class="tagline">Where faith, fellowship, and food come together.</p>
+    </header>
+     
+   <nav class="nav" aria-label="Main Navigation">
+         <a href="index.html">Home</a>
+         <a href="menu.html" class="active">Menu</a>
+         <a href="orders.html">Orders &#38 Delivery</a>
+         <a href="courses.html">Courses &#38 Events</a>
+         <a href="testimonials.html">Testimonials &#38 Community</a>
+         <a href="contact.html">Contact &#38 Support Services</a>
+      </nav>
+    
+    <main>
+        
+        <section class="page-banner page-menu">
+            <div class="banner-overlay">
+                <h1>Menu</h1>
+                <p>Freshly Baked Goods, Desserts, Drinks, and Sandwiches</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            
+            <section class="section-card">
+                
+                <h2 class="section-title">Portfolio Gallery with Filtering</h2>
+                
+                <p class="center">Select a category to view menu offerings. Click each image to enlarge it and read a
+                    description.</p>
+                
+                <div class="filter-buttons">
+                <button type="button" onclick="displayMenuItems('baked')">Baked Goods</button>
+                <button type="button" onclick="displayMenuItems('desserts')">Specialty Desserts</button>
+                <button type="button" onclick="displayMenuItems('drinks')">Drinks</button>
+                <button type="button" onclick="displayMenuItems('sandwiches')">Sandwiches</button>
+                </div>
+
+                <div id="menuGallery"></div>
+                
+            </section>
+        </div>
+        
+
+        <div id="menuModal" class="modal">
+            
+            <div class="modal-content">
+                
+            <button type="button" class="close" onclick="closeMenuModal()">×</button>
+                
+            <img id="modalImage" src="images/placeholder.jpg" alt="Menu item preview">
+                
+            <h3 id="modalTitle"></h3>
+                
+            <p id="modalPrice"></p>
+                
+            <p id="modalDescription"></p>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer class="footer">
+          
+         <p>"Where faith, fellowship, and food come together."</p>
+          
+         <button type="button" class="footer-toggle" data-target="contactInfo">Contact Information</button>
+          
+          <button type="button" class="footer-toggle" data-target="hoursInfo">Bakery Hours</button>
+          
+          <button type="button" class="footer-toggle" data-target="socialInfo">Social Media</button>
+          
+          <button type="button" class="footer-toggle" data-target="copyInfo">Copyright</button>
+          
+         <div id="contactInfo" class="footer-panel">
+             Dawn &#38 Dough Christian Bakery<br>Email:
+             hello@dawnanddough.com<br>Phone: (340) 555-2400
+         </div>
+          
+         <div id="hoursInfo" class="footer-panel">
+             Monday-Saturday: 7:00 AM - 6:00 PM<br>
+             Sunday: Closed for worship and rest
+         </div>
+          
+         <div id="socialInfo" class="footer-panel">
+             Instagram: @dawnanddoughbakery<br>
+             Facebook: Dawn &#38 Dough Christian Bakery<br>
+             TikTok: @dawnanddoughbakes
+         </div>
+          
+         <div id="copyInfo" class="footer-panel">
+             Copyright &copy; 2026 Dawn &#38 Dough Christian Bakery. Website created by Alanica Canonier for ITC2400.
+         </div>
+          
+      </footer>
+    
+    <script src="scripts/dawn.js"></script>
+    <script src="scripts/menu.js"></script>
+
+</body>
+
+</html>

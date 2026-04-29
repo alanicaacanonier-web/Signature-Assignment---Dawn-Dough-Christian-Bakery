@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Dawn &#38 Dough Orders and Delivery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dawn.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <p class="tagline">Where faith, fellowship, and food come together.</p>
+    </header>
+    
+   <nav class="nav" aria-label="Main Navigation">
+         <a href="index.html">Home</a>
+         <a href="menu.html">Menu</a>
+         <a href="orders.html" class="active">Orders &#38 Delivery</a>
+         <a href="courses.html">Courses &#38 Events</a>
+         <a href="testimonials.html">Testimonials &#38 Community</a>
+         <a href="contact.html">Contact &#38 Support Services</a>
+      </nav>
+    
+    <main>
+        
+        <section class="page-banner page-orders">
+            <div class="banner-overlay">
+                <h1>Orders & Delivery</h1>
+                <p>Order our menu offerings or place custom orders for pickup or delivery.</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            <div class="form-tabs">
+                <button type="button" class="button form-tab active" data-form="menuOrderForm">Order Menu Items</button> 
+                <button type="button" class="button form-tab" data-form="customOrderForm">Place Custom Orders</button>
+            </div>
+            
+            <section id="menuOrderForm" class="form-panel active">
+                
+                <h2 class="center">Menu Item Order Form</h2>
+                
+                <form id="menuItemForm">
+                    
+                    <div class="form-section">
+                        <h3>Customer Information</h3>
+                        <div class="field"><label>Name</label><input required></div>
+                        <div class="field"><label>Email</label><input type="email" required></div>
+                        <div class="field"><label>Phone Number</label><input type="tel" required></div>
+                    </div>
+                    
+                    <div class="order-layout">
+                        
+                        <div class="form-section">
+                            
+                            <h3>Select Items</h3>
+                            
+                            <div class="field"><label>Menu Offering</label>
+                                <select id="itemSelect" required>
+                                    <option value="">Choose an item</option>
+                                </select>
+                            </div>
+                            
+                            <div class="field"><label>Quantity</label><input id="itemQty" type="number" min="1"
+                                    value="1" required>
+                            </div>
+                            
+                            <button id="addItem" class="button" type="button">Add Item to Order</button>
+                        </div>
+                        
+                        <aside class="summary-card">
+                            
+                            <h3>Order Summary</h3>
+                            
+                            <div id="summaryItems"></div>
+                            
+                            <p>Items Subtotal: <strong id="subtotal">$0.00</strong></p>
+                            
+                            <p>Delivery Fee: <strong id="deliveryFee">$0.00</strong></p>
+                            
+                            <p>Order Total: <strong id="orderTotal">$0.00</strong></p>
+                            
+                        </aside>
+                    </div>
+                    
+                    <div class="form-section">
+                        
+                        <h3>Pickup or Delivery</h3>
+                        
+                        <div class="choice-row">
+                            <label><input type="radio" name="fulfillment" value="pickup" checked> Pick Up</label>
+                            <label><input type="radio" name="fulfillment" value="delivery"> Delivery</label>
+                        </div>
+                        
+                        <div id="pickupDetails">
+                            <div class="field"><label>Pick Up Date</label><input type="date" required></div>
+                            <div class="field"><label>Pick Up Time</label><input type="time" required></div>
+                        </div>
+                        
+                        <div id="deliveryDetails" class="hidden">
+                            <div class="field">
+                                <label>Delivery Address</label>
+                                <input id="deliveryAddress" name="deliveryAddress">
+                            </div>
+                            
+                            <div class="field">
+                                <label>Date for Delivery</label>
+                                <input id="deliveryDate" name="deliveryDate" type="date">
+                            </div>
+                            
+                            <div class="field">
+                                <label>Time Order Should Be Delivered By</label>
+                                <input id="deliveryTime" name="deliveryTime" type="time">
+                            </div>
+                        </div>
+                        
+                        <div class="field">
+                            <label>Additional Requests and Notes</label>
+                            <textarea placeholder="ex. allergies or special requests"></textarea>
+                        </div>
+                        
+                        <h4>Select Payment Method</h4>
+                        
+                        <label class="radio-option"><input type="radio" name="pay" required>PayPal</label><br>
+                        <label class="radio-option"><input type="radio" name="pay" required>Debit / Credit Card</label>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <input type="submit" value="Submit"> <br><br>
+                        <input type="reset" value="Reset">
+                    </div>
+                    
+                    <p class="center"><em>After confirming your order, a receipt will be sent to your email.</em></p>
+                    
+                </form>
+                
+            </section>
+            
+            <section id="customOrderForm" class="form-panel">
+                
+                <h2 class="center">Custom Order Form</h2>
+                
+                <form id="customForm">
+                    
+                    <div class="form-section">
+                        <h3>Customer Information</h3>
+                        <div class="field"><label>Name</label><input required></div>
+                        <div class="field"><label>Email</label><input type="email" required></div>
+                        <div class="field"><label>Phone Number</label><input type="tel" required></div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Custom Order Details</h3>
+                        <div class="field"><label>Type of Custom Order</label><select id="customType" required>
+                                <option value="">Choose one</option>
+                                <option>Custom Cake</option>
+                                <option>Bulk Pastry Order</option>
+                                <option>Church Event Order</option>
+                                <option>Birthday Dessert Table</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div id="customOtherBox" class="field hidden">
+                            <label>Please describe the other custom order</label>
+                            <textarea></textarea>
+                        </div>
+                        
+                        <div class="field">
+                            <label>Describe Your Custom Order</label>
+                            <textarea required></textarea>
+                        </div>
+                        
+                        <div class="field">
+                            <label>Number of Guests / Servings</label>
+                            <input type="number" min="1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        
+                        <h3>Pickup or Delivery</h3>
+                        
+                        <div class="choice-row">
+                            <label><input type="radio" name="customFulfillment" value="pickup" checked> Pick Up</label>
+                            <label><input type="radio" name="customFulfillment" value="delivery"> Delivery</label>
+                        </div>
+                        
+                        <div id="customPickupDetails">
+                            <div class="field"><label>Pick Up Date</label><input type="date" required></div>
+                            <div class="field"><label>Pick Up Time</label><input type="time" required></div>
+                        </div>
+                        
+                        <div id="customDeliveryDetails" class="hidden">
+                            <div class="field">
+                                <label>Delivery Address</label>
+                                <input id="customDeliveryAddress" name="customDeliveryAddress">
+                            </div>
+                            
+                            <div class="field">
+                                <label>Date for Delivery</label>
+                                <input id="customDeliveryDate" name="customDeliveryDate" type="date">
+                            </div>
+                            
+                            <div class="field">
+                                <label>Time Order Should Be Delivered By</label>
+                                <input id="customDeliveryTime" name="customDeliveryTime" type="time">
+                            </div>
+                        </div>
+                        
+                        <div class="field"><label>Additional Requests and Notes</label><textarea></textarea></div>
+                        
+                    </div>
+                    
+                    <div class="form-buttons"><input type="submit" value="Submit"> <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer">
+          
+         <p>"Where faith, fellowship, and food come together."</p>
+          
+         <button type="button" class="footer-toggle" data-target="contactInfo">Contact Information</button>
+          
+          <button type="button" class="footer-toggle" data-target="hoursInfo">Bakery Hours</button>
+          
+          <button type="button" class="footer-toggle" data-target="socialInfo">Social Media</button>
+          
+          <button type="button" class="footer-toggle" data-target="copyInfo">Copyright</button>
+          
+         <div id="contactInfo" class="footer-panel">
+             Dawn &#38 Dough Christian Bakery<br>Email:
+             hello@dawnanddough.com<br>Phone: (340) 555-2400
+         </div>
+          
+         <div id="hoursInfo" class="footer-panel">
+             Monday-Saturday: 7:00 AM - 6:00 PM<br>
+             Sunday: Closed for worship and rest
+         </div>
+          
+         <div id="socialInfo" class="footer-panel">
+             Instagram: @dawnanddoughbakery<br>
+             Facebook: Dawn &#38 Dough Christian Bakery<br>
+             TikTok: @dawnanddoughbakes
+         </div>
+          
+         <div id="copyInfo" class="footer-panel">
+             Copyright &copy; 2026 Dawn &#38 Dough Christian Bakery. Website created by Alanica Canonier for ITC2400.
+         </div>
+          
+      </footer>
+   
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dawn.js"></script>
+    
+</body>
+
+</html>

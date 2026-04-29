@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Dawn &#38 Dough Courses and Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dawn.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <p class="tagline">Where faith, fellowship, and food come together.</p>
+    </header>
+      
+    <nav class="nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="orders.html">Orders &#38 Delivery</a>
+        <a href="courses.html" class="active">Courses &#38 Events</a>
+        <a href="testimonials.html">Testimonials &#38 Community</a>
+        <a href="contact.html">Contact &#38 Support Services</a>
+    </nav>
+    
+    <main>
+        <section class="page-banner page-courses">
+            <div class="banner-overlay">
+                <h1>Courses &#38 Events</h1>
+                <p>Join us for hands-on baking classes, workshops, and faith-centered community gatherings.</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            <div class="category-row">
+                <button type="button" class="filter-btn event-filter active" data-event="baking">Baking Classes</button>
+                
+                <button type="button" class="filter-btn event-filter" data-event="workshops">Workshops</button>
+                
+                <button type="button" class="filter-btn event-filter" data-event="community">Community Events</button>
+                
+                <button type="button" class="filter-btn event-filter" data-event="faith">Faith Gatherings</button>
+            </div>
+            
+            <div id="eventPanels">
+                <section id="baking" class="event-panel active">
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Featured Event</h2>
+                        
+                        <div class="event-main"><img class="event-icon" src="images/baking-featured-icon.jpg" 
+                                                     alt="Baking featured event icon">
+                            <div>
+                                <h3>Faith &#38 Fellowship Baking Night</h3>
+                                <p>A hands-on class focused on baking, fellowship, and encouragement.</p>
+                                <p>April 20, 2026 | 6:00 PM - 8:00 PM | Tickets: $35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Upcoming Events</h2>
+                        
+                        <div class="grid grid-3">
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/beginner-baking-icon.jpg" 
+                                     alt="Beginner baking icon">
+                                <h3>Beginner Baking Class</h3>
+                                <p>April 22, 2026<br>11:00 AM - 1:00 PM<br>Tickets: $35.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/bread-making-icon.jpg" 
+                                     alt="Bread making icon">
+                                <h3>Bread Making Class</h3>
+                                <p>April 26, 2026<br>1:00 PM - 3:00 PM<br>Tickets: $30.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/pastry-skills-icon.jpg" 
+                                     alt="Pastry skills icon">
+                                <h3>Pastry Skills Class</h3>
+                                <p>May 1, 2026<br>9:00 AM - 11:00 AM<br>Tickets: $30.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="workshops" class="event-panel">
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Featured Event</h2>
+                        
+                        <div class="event-main">
+                            
+                            <img class="event-icon" src="images/workshops-featured-icon.jpg" 
+                                 alt="Workshops featured event icon">
+                            
+                            <div>
+                                <h3>Cake Decorating Workshop</h3>
+                                <p>A guided workshop focused on decorating skills.</p>
+                                <p>April 23, 2026 | 6:00 PM - 8:00 PM | Tickets: $35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Upcoming Events</h2>
+                        
+                        <div class="grid grid-3">
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/bread-shaping-icon.jpg" 
+                                     alt="Bread shaping workshop icon">
+                                <h3>Artisan Bread Shaping Workshop</h3>
+                                <p>June 18, 2026<br>5:30 PM - 7:30 PM<br>Tickets: $45.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/cookie-decorating-icon.jpg" 
+                                     alt="Cookie decorating workshop icon">
+                                <h3>Cookie Decorating Workshop</h3>
+                                <p>May 1, 2026<br>5:00 PM - 7:00 PM<br>Tickets: $42.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/advanced-baking-icon.jpg" 
+                                     alt="Advanced baking workshop icon">
+                                <h3>Advanced Baking Workshop</h3>
+                                <p>May 8, 2026<br>3:00 PM - 5:00 PM<br>Tickets: $30.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                        </div>
+                    </div>
+                    
+                </section>
+                
+                <section id="community" class="event-panel">
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Featured Event</h2>
+                        
+                        <div class="event-main">
+                            <img class="event-icon" src="images/community-event-featured-icon.jpg" 
+                                 alt="Community featured event icon">
+                            
+                            <div>
+                                <h3>Community Tasting Day</h3>
+                                <p>A welcoming event created to connect families, churches, and neighbors.</p>
+                                <p>April 24, 2026 | 10:00 AM - 12:00 PM | Tickets: Free</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Upcoming Events</h2>
+                        
+                        <div class="grid grid-3">
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/bake-sale-icon.jpg" 
+                                     alt="Bake sale icon">
+                                
+                                <h3>Community Bake Sale</h3>
+                                <p>April 29, 2026<br>3:00 PM - 5:00 PM<br>Tickets: $30.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/family-baking-icon.jpg"
+                                    alt="Family baking icon">
+                                <h3>Family Baking Day</h3>
+                                <p>May 3, 2026<br>2:00 PM - 4:00 PM<br>Tickets: $35.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/holiday-dessert-icon.jpg"
+                                    alt="Holiday dessert icon">
+                                <h3>Holiday Dessert Event</h3>
+                                <p>May 9, 2026<br>11:00 AM - 1:00 PM<br>Tickets: $30.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="faith" class="event-panel">
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Featured Event</h2>
+                        
+                        <div class="event-main">
+                            <img class="event-icon" src="images/faith-featured-icon.jpg" 
+                                 alt="Faith featured event icon">
+                            
+                            <div>
+                                <h3>Evening Worship &#38 Fellowship Gathering</h3>
+                                <p>A faith-centered gathering with scripture, encouragement, and baked goods.</p>
+                                <p>April 25, 2026 | 6:00 PM - 8:00 PM | Tickets: $42.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section-card">
+                        
+                        <h2 class="section-title">Upcoming Events</h2>
+                        
+                        <div class="grid grid-3">
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/devotional-icon.jpg" 
+                                     alt="Devotional event icon">
+                                <h3>Morning Devotional Gathering</h3>
+                                <p>April 30, 2026<br>6:30 AM - 8:00 AM<br>Tickets: $18.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/prayer-fellowship-icon.jpg" 
+                                     alt="Prayer fellowship event icon">
+                                <h3>Prayer &#38 Fellowship Night</h3>
+                                <p>May 4, 2026<br>6:00 PM - 8:00 PM<br>Tickets: $18.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                            
+                            <article class="event-card">
+                                <img class="event-icon" src="images/scripture-bread-icon.jpg" 
+                                     alt="Scripture and bread event icon">
+                                <h3>Scripture &#38 Bread Gathering</h3>
+                                <p>May 10, 2026<br>5:00 PM - 6:30 PM<br>Tickets: $35.00</p>
+                                <button type="button" class="button">Register</button>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+          
+         <p>"Where faith, fellowship, and food come together."</p>
+          
+         <button type="button" class="footer-toggle" data-target="contactInfo">Contact Information</button>
+          
+          <button type="button" class="footer-toggle" data-target="hoursInfo">Bakery Hours</button>
+          
+          <button type="button" class="footer-toggle" data-target="socialInfo">Social Media</button>
+          
+          <button type="button" class="footer-toggle" data-target="copyInfo">Copyright</button>
+          
+         <div id="contactInfo" class="footer-panel">
+             Dawn &#38 Dough Christian Bakery<br>Email:
+             hello@dawnanddough.com<br>Phone: (340) 555-2400
+         </div>
+          
+         <div id="hoursInfo" class="footer-panel">
+             Monday-Saturday: 7:00 AM - 6:00 PM<br>
+             Sunday: Closed for worship and rest
+         </div>
+          
+         <div id="socialInfo" class="footer-panel">
+             Instagram: @dawnanddoughbakery<br>
+             Facebook: Dawn &#38 Dough Christian Bakery<br>
+             TikTok: @dawnanddoughbakes
+         </div>
+          
+         <div id="copyInfo" class="footer-panel">
+             Copyright &copy; 2026 Dawn &#38 Dough Christian Bakery. Website created by Alanica Canonier for ITC2400.
+         </div>
+          
+      </footer>
+    
+    <script src="scripts/dawn.js"></script>
+</body>
+
+</html>

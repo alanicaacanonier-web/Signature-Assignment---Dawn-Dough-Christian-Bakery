@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+   <head>
+      <title>Dawn &#38 Dough Contact and Support Services</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles/dawn.css">
+   </head>
+    
+   <body>
+       
+      <header class="site-header">
+         <p class="tagline">Where faith, fellowship, and food come together.</p>
+      </header>
+       
+      <nav class="nav" aria-label="Main Navigation">
+         <a href="index.html">Home</a>
+         <a href="menu.html">Menu</a>
+         <a href="orders.html">Orders &#38 Delivery</a>
+         <a href="courses.html">Courses &#38 Events</a>
+         <a href="testimonials.html">Testimonials &#38 Community</a>
+         <a href="contact.html" class="active">Contact &#38 Support Services</a>
+      </nav>
+       
+      <main>
+         <section class="page-banner page-contact">
+            <div class="banner-overlay">
+               <h1>Contact &#38 Support Services</h1>
+               <p>We’re here to help! Reach out for questions about orders, events, or support.</p>
+            </div>
+         </section>
+          
+         <div class="container">
+             
+            <h2 class="section-title">Contact Information</h2>
+             
+            <div class="grid grid-2">
+                
+               <section class="soft-card contact-icons">
+                   
+                  <div class="info-line">
+                     <img src="images/location-icon.jpg" alt="Location icon">
+                     <p><strong>Location:</strong><br>12 Fellowship Lane, St. Thomas, VI</p>
+                  </div>
+                   
+                  <div class="info-line">
+                     <img src="images/phone-icon.jpg" alt="Phone icon">
+                     <p><strong>Phone Number:</strong><br>(340) 555-2400</p>
+                  </div>
+                   
+                  <div class="info-line">
+                     <img src="images/email-icon.jpg" alt="Email icon">
+                     <p><strong>Email Address:</strong><br>hello@dawnanddough.com</p>
+                  </div>
+                   
+                  <div class="info-line">
+                     <img src="images/hours-icon.jpg" alt="Hours icon">
+                     <p><strong>Hours:</strong><br>Mon-Sat: 7:00 AM - 6:00 PM<br>Sun: Closed</p>
+                  </div>
+               </section>
+                
+               <form id="contactForm" class="soft-card">
+                   
+                  <h3>Send A Message</h3>
+                   
+                  <div class="grid grid-2">
+                     <div class="field">
+                         <label>First Name</label>
+                         <input id="firstName" required pattern="[A-Za-z]+">
+                     </div>
+                      
+                     <div class="field">
+                         <label>Last Name</label>
+                         <input id="lastName" required pattern="[A-Za-z]+">
+                     </div>
+                  </div>
+                   
+                  <div class="field">
+                      <label>Email</label>
+                      <input type="email" required>
+                   </div>
+                   
+                  <div class="field">
+                      <label>Phone Number</label>
+                      <input type="tel" required>
+                   </div>
+                   
+                  <div class="grid grid-2">
+                     <div class="field">
+                         <label>City</label>
+                         <input id="city" required>
+                      </div>
+                      
+                     <div class="field">
+                         <label>Zip Code</label>
+                         <input id="zip" pattern="[0-9]{5}" placeholder="00802"
+                        required>
+                      </div>
+                  </div>
+                   
+                  <div class="field">
+                     <label>Reason for Contact</label>
+                     <select id="reason" required>
+                        <option value="">Choose one</option>
+                        <option>General Inquiry</option>
+                        <option>Order Question</option>
+                        <option>Custom Order Question</option>
+                        <option>Course/Event Question</option>
+                        <option>Support Issue</option>
+                        <option value="other">Other</option>
+                     </select>
+                  </div>
+                   
+                  <div id="reasonOtherBox" class="field hidden">
+                      <label>Please explain</label>
+                      <textarea></textarea>
+                  </div>
+                   
+                  <div class="field">
+                      <label>Message</label>
+                      <textarea required></textarea>
+                   </div>
+                   
+                  <div class="form-buttons">
+                      <input type="submit" value="Submit"> <br><br>
+                      <input type="reset" value="Reset">
+                  </div>
+                   
+                  <p class="center"><em>We’ll respond within 24–48 hours.</em></p>
+                   
+               </form>
+            </div>
+             
+            <h2 class="section-title">Support Services</h2>
+             
+            <ul class="support-row">
+               <li>
+                  <button type="button" class="support-toggle">
+                  <img src="images/order-support-icon.jpg" alt="Order support icon">
+                  <span class="support-title">Order Support</span>
+                  </button>
+                  <p class="support-description hidden">
+                     Help with existing or recent orders, payment questions, pickup changes, delivery updates, 
+                      and order corrections.
+                  </p>
+               </li>
+                
+               <li>
+                  <button type="button" class="support-toggle">
+                  <img src="images/custom-orders-icon.jpg" alt="Custom order icon">
+                  <span class="support-title">Custom Orders</span>
+                  </button>
+                  <p class="support-description hidden">
+                     Assistance with custom cakes, bulk dessert trays, church orders, tasting sessions, serving sizes, 
+                      and special requests.
+                  </p>
+               </li>
+                
+               <li>
+                  <button type="button" class="support-toggle">
+                  <img src="images/courses-events-icon.jpg" alt="Courses and events icon">
+                  <span class="support-title">Courses &#38 Events</span>
+                  </button>
+                  <p class="support-description hidden">
+                     Questions about baking classes, workshops, faith gatherings, event registration, ticket prices, 
+                      and schedules.
+                  </p>
+               </li>
+                
+               <li>
+                  <button type="button" class="support-toggle">
+                  <img src="images/general-questions-icon.jpg" alt="General questions icon">
+                  <span class="support-title">General Questions</span>
+                  </button>
+                  <p class="support-description hidden">
+                     General help with bakery hours, menu offerings, allergy questions, contact information, and 
+                      community participation.
+                  </p>
+               </li>
+            </ul>
+             
+            <div class="grid grid-2">
+               <section class="soft-card center">
+                  <h2>Find Us</h2>
+                  <img src="images/find-us-map.jpg" alt="Illustrated map to Dawn and Dough"
+                     style="max-width:100%;border-radius:16px">
+               </section>
+                
+               <section class="soft-card">
+                  <h2 class="section-title">Frequently Asked Questions</h2>
+                  <div class="faq-item">
+                     <div class="faq-q"><span class="question-icon">?</span>How far in advance should I place orders?
+                     </div>
+                     <p class="faq-a">Menu orders can usually be placed at least 24 hours in advance. Custom cakes,
+                        bulk orders, and event dessert tables should be requested 5–7 days ahead so there is enough
+                        time to confirm details.
+                     </p>
+                  </div>
+                   
+                  <div class="faq-item">
+                     <div class="faq-q"><span class="question-icon">?</span>Do you offer delivery?</div>
+                     <p class="faq-a">Yes. Delivery is available for local orders within the service area. A small
+                        delivery fee may be added based on distance and order size.
+                     </p>
+                  </div>
+                   
+                  <div class="faq-item">
+                     <div class="faq-q"><span class="question-icon">?</span>Can I request custom items?</div>
+                     <p class="faq-a">Yes. Customers can request custom cakes, dessert trays, faith-themed baked
+                        goods, and bulk orders through the custom order form.
+                     </p>
+                  </div>
+                   
+                  <div class="faq-item">
+                     <div class="faq-q"><span class="question-icon">?</span>Are there allergy-friendly options?</div>
+                     <p class="faq-a">Some allergy-conscious options may be available by request. Customers should
+                        list allergies clearly so the bakery can discuss safe preparation options.
+                     </p>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </main>
+       
+      <footer class="footer">
+          
+         <p>"Where faith, fellowship, and food come together."</p>
+          
+         <button type="button" class="footer-toggle" data-target="contactInfo">Contact Information</button>
+          
+          <button type="button" class="footer-toggle" data-target="hoursInfo">Bakery Hours</button>
+          
+          <button type="button" class="footer-toggle" data-target="socialInfo">Social Media</button>
+          
+          <button type="button" class="footer-toggle" data-target="copyInfo">Copyright</button>
+          
+         <div id="contactInfo" class="footer-panel">
+             Dawn &#38 Dough Christian Bakery<br>Email:
+             hello@dawnanddough.com<br>Phone: (340) 555-2400
+         </div>
+          
+         <div id="hoursInfo" class="footer-panel">
+             Monday-Saturday: 7:00 AM - 6:00 PM<br>
+             Sunday: Closed for worship and rest
+         </div>
+          
+         <div id="socialInfo" class="footer-panel">
+             Instagram: @dawnanddoughbakery<br>
+             Facebook: Dawn &#38 Dough Christian Bakery<br>
+             TikTok: @dawnanddoughbakes
+         </div>
+          
+         <div id="copyInfo" class="footer-panel">
+             Copyright &copy; 2026 Dawn &#38 Dough Christian Bakery. Website created by Alanica Canonier for ITC2400.
+         </div>
+          
+      </footer>
+       
+      <script src="scripts/dawn.js"></script>
+       
+   </body>
+</html>
